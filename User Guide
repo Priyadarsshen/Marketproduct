@@ -1,0 +1,31 @@
+User Guide:
+Navigation:
+1. Home Page:
+   - Upon entering the website, you'll be directed to the homepage.
+   - Here, you'll find a navigation bar at the top with icons for Home, Add Product, and Shop.
+2. Navbar Icons:
+   - Home Icon:
+     - Clicking this icon will return you to the homepage from any page within the website.
+   - Add Product Icon:
+     - Clicking this icon will redirect you to the Add Product page where you can add new products to the website.
+   - Shop Icon:
+     - Clicking this icon will redirect you to the Collection page where products are categorized.
+Collection Page (Shop Page):
+1. Categories:
+   - On the Collection page, you'll see categories of products displayed.
+   - Click on the category icon you're interested in to view products within that category.
+ 
+2. Product Display:
+   - After selecting a category, products belonging to that category will be displayed on the page.
+Product Details Page:
+1. Product Information:
+   - The Product Details page displays detailed information about a specific product.
+   - You'll see the product name, vendor's name, description, price, and stock availability.
+2. Actions:
+   - Below the product details, there are buttons for "Update" and "Delete".
+     - Update Button:
+       - Clicking this button will redirect you to the Update page where you can edit the product details.
+     - Delete Button:
+       - Clicking this button will redirect you to the Delete page where you can remove the product.
+3. Breadcrumbs:
+   - Above the product details, breadcrumbs are displayed to help you navigate back to the Collection page or previous pages.
