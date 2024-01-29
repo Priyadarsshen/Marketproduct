@@ -1,0 +1,47 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    height: 100vh;
+    overflow: hidden;
+}
+.old_price {
+    font-weight: bold;
+    color: red;
+}
+
+.new_price {
+    font-weight: bold;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5px;
+
+}
+.pic-box{
+    position: relative;
+}
+
+.like {
+    color: red;
+    top: 0;
+    position: absolute;
+}
+img {
+    width: 305px;
+    height: 250px;
+    border: 1pt solid;
+}
+.contain {
+    object-fit: contain;
+}
