@@ -1,0 +1,1 @@
+This program is to develop a product catalog with CRUD functionality for adding, updating, and deleting products. It also includes details like name,description,original and discount price of the product like a E-commerce website.
