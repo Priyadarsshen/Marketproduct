@@ -1,0 +1,132 @@
+Developer Guide:
+ 
+#Project Structure
+1. Directory Structure:
+   - The project is organized into the following directories:
+     - `catalog`: Main project directory(app).
+     - `Inc`: Contains reusable components.
+       - `footer.html`: Footer component.
+       - `navbar.html`: Navbar component.
+       - `slider.html`: Slider component.
+
+     - `items`: Contains templates related to product details items.
+       - `index.html`: Index page for items.
+       - `product_details.html`: Template for displaying product details.
+
+     - `layouts`: Contains layout templates for different pages.
+       - `addproduct.html`: Layout template for adding a product.
+       - `delete.html`: Layout template for deleting a product.
+       - `index.html`: Layout template for the index page.
+       - `shop.html`: Layout template for the shop page.
+       - `update.html`: Layout template for updating a product.
+
+     - `Styles`: Contains static assets.
+       - `css`: CSS stylesheets.
+         - `style.css`: Main stylesheet for the project.
+       - `images`: Image files.
+       - `uploads`: Directory for uploaded files.
+ 
+#Key Components:
+1. Templates:
+   - Utilize templates for rendering HTML content.
+   - Organize templates into logical directories based on functionality.
+ 
+2. Reusable Components:
+   - Use components like `footer.html`, `navbar.html`, and `slider.html` across multiple pages for consistency.
+   - Include these components in layout templates for easy reuse.
+
+3. Layouts:
+   - Define layout templates such as `addproduct.html`, `delete.html`, `index.html`, `shop.html`, and `update.html` to maintain consistent design and structure across pages.
+ 
+4. Static Assets:
+   - Store CSS stylesheets, images, and uploaded files in the `Styles` directory.
+   - Ensure proper organization and optimization of static assets for improved performance.
+ 
+#Customization and Extension:
+1. Customization:
+   - Customize existing templates or create new ones as needed for specific requirements.
+   - Ensure consistency in design and layout across all templates.
+ 
+2. CSS Styling:
+   - Define styles in `styles.css` to apply consistent styling throughout the project.
+ 
+#Deployment:
+1. Static File Management:
+   - Configure Django to serve static files in production for efficient delivery.
+   - Use tools like Whitenoise or serve static files through a separate web server.
+ 
+2. Server Configuration:
+   - Configure server settings and environment variables for deployment.
+   - Ensure proper security measures are implemented to protect the application.
+ 
+#Contributing:
+1. Version Control:
+   - Use Git for version control to track changes and collaborate with other developers.
+   - Follow branching strategies and commit message conventions for organized development.
+ 
+2. Code Review:
+   - Implement code review practices to maintain code quality and consistency.
+   - Encourage contributors to submit pull requests and participate in code reviews.
+
+#Models:
+1. Category Model:
+   - Represents a category of products.
+   - Includes fields such as `name`, `description`, 'image', 'status', 'created_at'.
+ 
+2. Product Model:
+   - Represents a product.
+   - Includes fields such as `name`, `category` (foreign key to Category model), `description`, 
+     `price`, 'vendor's_name', 'quantity','description','status','like'.
+ 
+#Views:
+1. Home View (home):
+   - Renders the home page of the website.
+ 
+2. Add Product View (Addproduct):
+   - Renders the page for adding a new product.
+   - Handles form submission for adding a new product.
+ 
+3. Category view (shop):
+   - Renders the shop page displaying all products.
+ 
+4. Shop View with Category Filter (shopview):
+   - Renders the shop page with products filtered by category.
+ 
+5. Product Details View (product_details):
+   - Renders the page displaying details of a specific product.
+ 
+6. Update Product View (update):
+   - Renders the page for updating an existing product.
+   - Handles form submission for updating a product.
+ 
+7. Delete Product View (delete):
+   - Renders the page for deleting an existing product.
+   - Handles form submission for deleting a product.
+ 
+#URL Patterns:
+1. Home URL (empty path):
+   - Maps to the home view.
+ 
+2. Add Product URL ('addproduct'):
+   - Maps to the add product view.
+ 
+3. Shop URL ('shop'):
+   - Maps to the shop.
+ 
+4. Shop URL with Category Filter ('shop/<str:name>'):
+   - Maps to the shop view with products filtered by category name.
+ 
+5. Product Details URL ('shop/<str:cname>/<str:pname>'):
+   - Maps to the product details view for a specific product.
+ 
+6. Update Product URL ('update/<int:pk>'):
+   - Maps to the update product view for a specific product ID.
+ 
+7. Delete Product URL ('delete/<int:pk>'):
+   - Maps to the delete product view for a specific product ID.
+ 
+#Forms:
+1. UserImage Form (userimage):
+   - Represents a form for uploading user images.
+   - Includes fields such as `name`, `description`, 
+     `price`, 'vendor's_name', 'quantity','description','status','like'.
